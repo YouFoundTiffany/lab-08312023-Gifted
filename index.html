@@ -41,9 +41,9 @@
   <!-- SECTION -->
   <main>
 
-    <section id="auth-template">
-      <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
-      <div class="container-fluid">
+    <!-- <section id="auth-template"> -->
+    <!-- TODO REMOVE THE AUTH TEMPLATE ONCE YOU VERIFY YOUR AUTH SETTINGS -->
+    <!-- <div class="container-fluid">
         <div class="row my-3">
           <div class="col-lg-5" id="auth-settings">
             <div class="card p-2 skeleton-loader">
@@ -62,11 +62,52 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="router-view">
       <!-- primary viewport -->
     </section>
+    <div class="container-fluid">
+      <section class="row">
+
+        <div class="col-4">
+          <div class="row justify-content-center">
+            <div class="col-10">Gifted</div>
+            <!-- Create Gift Button -->
+
+          </div>
+          <!-- Input Form Goes Here -->
+          <form class="row p-2" onsubmit="app.SandboxController.createGift()">
+            <div class="form-floating mb-2">
+              <input type="text" class="form-control" name="tag" id="tag" placeholder="Tag">
+              <label for="tag">Tag</label>
+            </div>
+            <div class="form-floating mb-2">
+              <input type="text" class="form-control" name="url" id="url" placeholder="url">
+              <label for="url">URL</label>
+              <div class="text-end">
+                <button type="submit" class="btn btn-info">Create Gift</button>
+
+              </div>
+            </div>
+          </form>
+          <!-- Search Form Goes Here -->
+        </div>
+        <div class="col-8">
+          <div class="row justify-content-between" id="gifts">
+            <!-- NOTE Gift Template start -->
+            <!-- <div class="col-3  m-3">
+              <img src="" alt="gift img">
+              <span>Gift tag</span>
+            </div> -->
+            <!-- NOTE Gift Template End -->
+            <!-- <div class="col-3  m-3">gifts</div>
+            <div class="col-3  m-3">gifts</div>
+            <div class="col-3 m-3">Gifts</div> -->
+          </div>
+        </div>
+      </section>
+    </div>
 
 
   </main>
